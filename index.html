@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mappr — Not a diagram. A decision.</title>
+  <meta name="description" content="Mappr reads your raw input — transcripts, notes, feedback — and returns the causal map of your system. With the leverage points. With a strategy." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">Mappr</a>
+      <div class="navbar__links">
+        <a href="#how" class="navbar__link">How it works</a>
+        <a href="#access" class="btn btn--dark">Get access</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACT 1 — HERO
+  ═══════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="label hero__label">Systems Thinking · AI-powered</p>
+      <h1 class="hero__h1">
+        Your problems are networks.<br />
+        Your solutions shouldn't be linear.
+      </h1>
+      <p class="hero__subline">
+        Mappr reads your raw input — transcripts, notes, feedback —<br />
+        and returns the causal map of your system.<br />
+        With the leverage points. With a strategy.
+      </p>
+      <div class="hero__ctas">
+        <a href="#access" class="btn btn--hero">Request early access →</a>
+        <a href="#shift" class="btn btn--ghost" data-scroll-to="#shift">See how it works ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACT 2 — THE PROBLEM
+  ═══════════════════════════════════════════════════════ -->
+  <section class="problem" id="problem" aria-label="The Problem">
+    <div class="container">
+      <div class="problem__inner">
+        <p class="label problem__label">The Problem</p>
+
+        <div class="problem__lines" role="list">
+          <p class="problem__line" data-delay="0"   role="listitem">You ran the workshop.</p>
+          <p class="problem__line" data-delay="80"  role="listitem">You wrote the strategy.</p>
+          <p class="problem__line" data-delay="160" role="listitem">You hired the consultant.</p>
+
+          <div class="problem__line problem__line--pause" data-delay="240" aria-hidden="true"></div>
+
+          <p class="problem__line problem__line--climax" data-delay="340" role="listitem">
+            The problem came back.
+          </p>
+        </div>
+
+        <hr class="problem__divider" aria-hidden="true" />
+
+        <p class="problem__epilogue">
+          Not because you failed.<br />
+          Because you were working from the wrong map.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACT 3 — PARADIGM SHIFT + ANIMATED LOOP
+  ═══════════════════════════════════════════════════════ -->
+  <section class="shift" id="shift" aria-label="The Paradigm Shift">
+    <div class="shift__inner">
+
+      <!-- Left: copy -->
+      <div class="shift__copy">
+        <p class="label shift__label">The Shift</p>
+
+        <div class="shift__steps">
+          <div class="shift__step active" data-step="0">
+            <p class="shift__step-num">01</p>
+            <p class="shift__step-text">Every complex problem has a structure.</p>
+          </div>
+
+          <div class="shift__step" data-step="1">
+            <p class="shift__step-num">02</p>
+            <p class="shift__step-text">Most tools help you document it.</p>
+          </div>
+
+          <div class="shift__step" data-step="2">
+            <p class="shift__step-num">03</p>
+            <p class="shift__step-text">
+              Mappr helps you understand it —<br />
+              and tells you where to start<br />
+              to pull the thread.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: sticky animated loop -->
+      <div class="shift__visual" aria-hidden="true">
+        <div class="loop-card">
+          <svg id="loop-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Causal loop diagram"></svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACT 4 — HOW IT WORKS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="how" id="how" aria-label="How It Works">
+    <div class="container">
+
+      <div class="how__header">
+        <p class="label how__label">How It Works</p>
+        <h2 class="how__h2">Three steps. One map.</h2>
+      </div>
+
+      <div class="how__cards">
+
+        <!-- Card 1 -->
+        <div class="how__card" data-delay="0">
+          <p class="mono how__card-num">01</p>
+          <svg class="how__card-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 4v22M12 18l8 8 8-8"/>
+            <path d="M6 32h28"/>
+          </svg>
+          <h3 class="how__card-title">Upload your raw input</h3>
+          <p class="how__card-body">
+            Transcripts. Meeting notes. Feedback reports.
+            Whatever you have — Mappr reads it.
+          </p>
+        </div>
+
+        <!-- Card 2 (center) -->
+        <div class="how__card how__card--center" data-delay="150">
+          <p class="mono how__card-num">02</p>
+          <svg class="how__card-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="20" cy="20" r="5"/>
+            <circle cx="8"  cy="10" r="3.5"/>
+            <circle cx="32" cy="10" r="3.5"/>
+            <circle cx="8"  cy="30" r="3.5"/>
+            <circle cx="32" cy="30" r="3.5"/>
+            <line x1="11" y1="12" x2="17" y2="17"/>
+            <line x1="29" y1="12" x2="23" y2="17"/>
+            <line x1="11" y1="28" x2="17" y2="23"/>
+            <line x1="29" y1="28" x2="23" y2="23"/>
+          </svg>
+          <h3 class="how__card-title">Get your causal map</h3>
+          <p class="how__card-body">
+            AI identifies the key variables, the feedback loops,
+            and the relationships driving your system.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="how__card" data-delay="300">
+          <p class="mono how__card-num">03</p>
+          <svg class="how__card-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="20" cy="20" r="14"/>
+            <circle cx="20" cy="20" r="7"/>
+            <line x1="20" y1="2"  x2="20" y2="8"/>
+            <line x1="20" y1="32" x2="20" y2="38"/>
+            <line x1="2"  y1="20" x2="8"  y2="20"/>
+            <line x1="32" y1="20" x2="38" y2="20"/>
+            <circle cx="20" cy="20" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+          <h3 class="how__card-title">Know where to intervene</h3>
+          <p class="how__card-body">
+            Leverage points. Phased intervention strategy.
+            Not just a diagram — a decision.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACT 5 — PLACEHOLDER (v2)
+       Reserved for case study / before-after proof.
+  ═══════════════════════════════════════════════════════ -->
+  <!-- <section id="proof"> ... v2 ... </section> -->
+
+  <!-- ═══════════════════════════════════════════════════════
+       ACT 6 — CTA CLOSING
+  ═══════════════════════════════════════════════════════ -->
+  <section class="cta-close" id="access" aria-label="Call to action">
+    <div class="container">
+      <h2 class="cta-close__h2">
+        The thread is already there.<br />
+        You just need to see where it starts.
+      </h2>
+      <a href="mailto:hello@mappr.app" class="btn btn--light">Request access →</a>
+      <p class="cta-close__fine">No credit card. No onboarding call. Just the map.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <span class="footer__tagline">Mappr — Not a diagram. A decision.</span>
+      <span class="footer__copy">© 2026</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="loop-animation.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
