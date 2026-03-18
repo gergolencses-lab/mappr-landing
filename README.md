@@ -1,6 +1,6 @@
 # Mappr — Landing Page
 
-Static landing page for [Mappr](https://mappr.app).
+Static landing page
 No build tools. No dependencies. Vanilla HTML / CSS / JS.
 
 ## Structure
