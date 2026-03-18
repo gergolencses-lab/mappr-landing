@@ -20,6 +20,14 @@
   --max-w:        1100px;
 }
 
+/* --- Accent utilities --- */
+.accent-blue       { color: var(--blue); }
+.accent-orange     { color: var(--orange); }
+/* On dark backgrounds, slightly softer blue for readability */
+.accent-blue-light { color: #7DB8F0; }
+/* Visible but not loud — for step numbers */
+.accent-blue-dim   { color: rgba(74, 144, 226, 0.55); }
+
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
